@@ -1,0 +1,81 @@
+name: apparel
+description: AMOG, ILAS, TABAJONDA, TEJADA
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+
+  font_awesome_flutter: ^8.4.0
+
+  flutter_swiper: ^1.1.6
+
+  simple_shadow: ^0.2.0
+
+  simple_gradient_text: ^1.2.2
+
+  provider: ^4.3.3
+
+  geolocator: ^7.7.1
+
+  http: ^0.12.0+2
+
+  flutter_spinkit: ^3.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - lib/assets/images/stainremoval.png
+    - lib/assets/images/fabriccare.jpg
+    - lib/assets/images/locate.jpg
+    - lib/assets/images/apparellogo.png
+    - lib/assets/images/Cotton.png
+    - lib/assets/images/denim.png
+    - lib/assets/images/leather.png
+    - lib/assets/images/linen.png
+    - lib/assets/images/silk.png
+    - lib/assets/images/wool.png
+    - lib/assets/images/blood.png
+    - lib/assets/images/coffee.png
+    - lib/assets/images/grease.png
+    - lib/assets/images/ink.png
+    - lib/assets/images/sauce.png
+    - lib/assets/images/sweat.png
+
+  fonts:
+    - family: Outfit
+      fonts:
+        - asset: lib/assets/fonts/Outfit-Thin.ttf
+          weight: 100
+        - asset: lib/assets/fonts/Outfit-ExtraLight.ttf
+          weight: 200
+        - asset: lib/assets/fonts/Outfit-Light.ttf
+          weight: 300
+        - asset: lib/assets/fonts/Outfit-Regular.ttf
+          weight: 400
+        - asset: lib/assets/fonts/Outfit-Medium.ttf
+          weight: 500
+        - asset: lib/assets/fonts/Outfit-SemiBold.ttf
+          weight: 600
+        - asset: lib/assets/fonts/Outfit-Bold.ttf
+          weight: 700
+        - asset: lib/assets/fonts/Outfit-ExtraBold.ttf
+          weight: 800
+        - asset: lib/assets/fonts/Outfit-Black.ttf
+          weight: 900
+
+
+
