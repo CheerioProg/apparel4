@@ -4,6 +4,7 @@ import 'screens/removalStains.dart';
 import 'screens/fabricCare.dart';
 import 'screens/loadingPage.dart';
 import 'package:flutter/services.dart';
+import 'screens/splash_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,9 +26,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      home: Splash(),
       initialRoute: '/',
       routes: {
-        '/': (context) => LoadingPage(),
+        //'/': (context) => LoadingPage(),
+        '/loadingPage': (context) => LoadingPage(),
         '/removalStains': (context) => RemovalStains(),
         '/fabricCare': (context) => FabricCare(),
         '/storeFinder': (context) => StoreFinder(),
@@ -37,10 +40,10 @@ class MyApp extends StatelessWidget {
           accentColor: Color(0xFF000000),
           textTheme: TextTheme(
               bodyText2: TextStyle(
-            color: Color(0xFFFFFF),
-            fontFamily: 'Outfit',
-            fontWeight: FontWeight.w400,
-          ))),
+                color: Color(0xFFFFFF),
+                fontFamily: 'Outfit',
+                fontWeight: FontWeight.w400,
+              ))),
     );
   }
 }
