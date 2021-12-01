@@ -4,7 +4,6 @@ import 'package:apparel/components/botNavBar.dart';
 import 'package:apparel/components/weather.dart';
 
 class StoreFinder extends StatefulWidget {
-
   StoreFinder({this.locationWeather});
 
   final locationWeather;
@@ -27,7 +26,7 @@ class _StoreFinderState extends State<StoreFinder> {
     updateUI(widget.locationWeather);
   }
 
-  void updateUI(dynamic weatherData){
+  void updateUI(dynamic weatherData) {
     setState(() {
       if (weatherData == null) {
         weatherIcon = 'Click';
@@ -45,8 +44,6 @@ class _StoreFinderState extends State<StoreFinder> {
     });
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,7 +53,7 @@ class _StoreFinderState extends State<StoreFinder> {
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
         title: Text(
-          'Store Finder',
+          'Fit Check',
           style: kPageheadBold,
         ),
         elevation: 0,
@@ -64,23 +61,23 @@ class _StoreFinderState extends State<StoreFinder> {
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [
-                Color(0xFF87cdfe),
-                Color(0xFF9cc8ff),
-                Color(0xFFb9c2ff),
-                Color(0xFFd9b9ff),
-                Color(0xFFf8aff9),
-              ],
-              stops: [
-                0.2,
-                0.3,
-                0.5,
-                0.8,
-                1,
-              ],
-              begin: Alignment.topRight,
-              end: Alignment.bottomLeft,
-            )),
+          colors: [
+            Color(0xFF87cdfe),
+            Color(0xFF9cc8ff),
+            Color(0xFFb9c2ff),
+            Color(0xFFd9b9ff),
+            Color(0xFFf8aff9),
+          ],
+          stops: [
+            0.2,
+            0.3,
+            0.5,
+            0.8,
+            1,
+          ],
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+        )),
         constraints: BoxConstraints.expand(),
         width: double.infinity,
         child: Padding(
@@ -133,8 +130,8 @@ class _StoreFinderState extends State<StoreFinder> {
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: TextButton(
-                      onPressed: () async{
-                        var weatherData =  await weather.getLocationWeather();
+                      onPressed: () async {
+                        var weatherData = await weather.getLocationWeather();
                         updateUI(weatherData);
                       },
                       child: Icon(

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:apparel/constants.dart';
 
 class BotBar extends StatelessWidget {
   const BotBar({
@@ -33,7 +32,7 @@ class BotBar extends StatelessWidget {
               }),
           IconButton(
               icon: Icon(
-                Icons.search_rounded,
+                Icons.cloud_queue_rounded,
               ),
               iconSize: 35.0,
               onPressed: () {
